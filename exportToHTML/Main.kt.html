@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>Main.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">fun </span><span class="s1">consultaEnergia</span><span class="s2">() {</span>
+    <span class="s1">TODO</span><span class="s2">(</span><span class="s3">&quot;Not yet implemented&quot;</span><span class="s2">)</span>
+<span class="s2">}</span>
+
+<span class="s0">fun </span><span class="s1">main</span><span class="s2">() {</span>
+
+    <span class="s4">//Testing params</span>
+    <span class="s0">val </span><span class="s1">testName </span><span class="s2">= </span><span class="s3">&quot;Pepe&quot;</span>
+    <span class="s0">val </span><span class="s1">testTypeName </span><span class="s2">= </span><span class="s3">&quot;Pajaro&quot;</span>
+    <span class="s0">val </span><span class="s1">testWashingType </span><span class="s2">= </span><span class="s3">&quot;Con un atomizador de agua se lo aplicamos a la mascota&quot;</span>
+    <span class="s0">val </span><span class="s1">testFood </span><span class="s2">= </span><span class="s3">&quot;alpiste&quot;</span>
+    <span class="s0">val </span><span class="s1">testSound </span><span class="s2">= </span><span class="s3">&quot;pio pio&quot;</span>
+
+    <span class="s4">//Begin</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Bienvenidos a tu juego de mascota&quot;</span><span class="s2">)</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Para crear tu mascota necesitamos algunos datos&quot;</span><span class="s2">)</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;¿Que nombre quieres para tu mascota?&quot;</span><span class="s2">)</span>
+    <span class="s4">//val petName = readln()</span>
+    <span class="s0">val </span><span class="s1">petName </span><span class="s2">= </span><span class="s1">testName</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;¿Que tipo de mascota es?&quot;</span><span class="s2">)</span>
+    <span class="s4">//val petTypeName = readln()</span>
+    <span class="s0">val </span><span class="s1">petTypeName </span><span class="s2">= </span><span class="s1">testTypeName</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;¿Como se baña tu mascota?&quot;</span><span class="s2">)</span>
+    <span class="s4">//val washingInstructions = readln()</span>
+    <span class="s0">val </span><span class="s1">washingInstructions </span><span class="s2">= </span><span class="s1">testWashingType</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;¿Que tipo de comida le das?&quot;</span><span class="s2">)</span>
+    <span class="s4">//val foodType = readln()</span>
+    <span class="s0">val </span><span class="s1">foodType </span><span class="s2">= </span><span class="s1">testFood</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;¿Que sonido hace tu animal?&quot;</span><span class="s2">)</span>
+    <span class="s4">//val soundType = readln()</span>
+    <span class="s0">val </span><span class="s1">soundType </span><span class="s2">= </span><span class="s1">testSound</span>
+<span class="s4">//    val pet = Pet(</span>
+<span class="s4">//        name = petName,</span>
+<span class="s4">//        type = PetType(petTypeName, washingInstructions, foodType, soundType),</span>
+<span class="s4">//    )</span>
+    <span class="s4">//Poner menu de funciones para hacer con la mascota</span>
+    <span class="s4">//[1] Jugar</span>
+    <span class="s4">//[2] Sonido</span>
+    <span class="s4">//[3] Ver estado de la mascota</span>
+
+
+    <span class="s1">println</span><span class="s2">(</span><span class="s1">pet</span><span class="s2">.</span><span class="s1">toString</span><span class="s2">())</span>
+    <span class="s1">pet</span><span class="s2">.</span><span class="s1">play</span><span class="s2">()</span>
+    <span class="s1">pet</span><span class="s2">.</span><span class="s1">sound</span><span class="s2">()</span>
+    <span class="s1">pet</span><span class="s2">.</span><span class="s1">darDeComerMascota</span><span class="s2">()</span>
+    <span class="s1">pet</span><span class="s2">.</span><span class="s1">reset</span><span class="s2">()</span>
+
+    <span class="s0">fun </span><span class="s1">menuMascota</span><span class="s2">() {</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;[1] Jugar con tu mascota&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;[2] Consultar energia de tu mascota&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;[3] Darle de comer a tu mascota&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;[4] Dormir a tu mascota&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;[5] No jugar mas con la mascota&quot;</span><span class="s2">)</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">val </span><span class="s1">opcionMenu </span><span class="s2">= </span><span class="s1">readln</span><span class="s2">().</span><span class="s1">toIntOrNull</span><span class="s2">()</span>
+    <span class="s0">while </span><span class="s2">(</span><span class="s1">opcionMenu </span><span class="s2">!= </span><span class="s5">5</span><span class="s2">) {</span>
+        <span class="s1">menuMascota</span><span class="s2">()</span>
+        <span class="s0">when </span><span class="s2">(</span><span class="s1">opcionMenu</span><span class="s2">) {</span>
+            <span class="s5">1 </span><span class="s2">-&gt; </span><span class="s1">play</span><span class="s2">()</span>
+            <span class="s5">2 </span><span class="s2">-&gt; </span><span class="s1">consultaEnergia</span><span class="s2">()</span>
+            <span class="s5">3 </span><span class="s2">-&gt; </span><span class="s1">eat</span><span class="s2">()</span>
+            <span class="s5">4 </span><span class="s2">-&gt; </span><span class="s1">reset</span><span class="s2">()</span>
+        <span class="s2">}</span>
+        <span class="s0">else </span><span class="s1">run </span><span class="s2">{</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No jugar más&quot;</span><span class="s2">)</span>
+        <span class="s2">}</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">Pet</span><span class="s2">&lt;</span><span class="s1">PetType</span><span class="s2">&gt;(</span>
+    <span class="s0">val </span><span class="s1">name: String</span><span class="s2">,</span>
+<span class="s4">//    var health: Int = 100,</span>
+    <span class="s0">val </span><span class="s1">type: PetType</span><span class="s2">,</span>
+    <span class="s0">var </span><span class="s1">energy: Int </span><span class="s2">= </span><span class="s5">100</span><span class="s2">,</span>
+    <span class="s0">var </span><span class="s1">hungry: Int </span><span class="s2">= </span><span class="s5">10</span><span class="s2">,</span>
+    <span class="s0">var </span><span class="s1">sleep: Float </span><span class="s2">= </span><span class="s5">0.0F</span>
+<span class="s2">) {</span>
+
+
+    <span class="s0">fun </span><span class="s1">consultaEnergia</span><span class="s2">() {</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;La energia de tu mascota es </span><span class="s0">$</span><span class="s1">energy</span><span class="s3">&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+
+    <span class="s0">fun </span><span class="s1">darDeComerMascota</span><span class="s2">() {</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Que cantiad de comida le vas a dar </span><span class="s0">$</span><span class="s1">eat</span><span class="s3">()&quot;</span><span class="s2">)</span>
+
+    <span class="s2">}</span>
+
+    <span class="s0">fun </span><span class="s1">sound</span><span class="s2">() {</span>
+        <span class="s1">TODO</span><span class="s2">(</span><span class="s3">&quot;Not yet implemented&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+
+    <span class="s0">fun </span><span class="s1">play</span><span class="s2">() {</span>
+        <span class="s1">TODO</span><span class="s2">(</span><span class="s3">&quot;Not yet implemented&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+
+    <span class="s0">fun </span><span class="s1">reset</span><span class="s2">() {</span>
+        <span class="s1">TODO</span><span class="s2">(</span><span class="s3">&quot;Not yet implemented&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">fun </span><span class="s1">play</span><span class="s2">() {</span>
+    <span class="s0">val </span><span class="s1">phrases </span><span class="s2">= </span><span class="s1">arrayListOf</span><span class="s2">(</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, se subió encima del sofá&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, salta la silla&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, sale a saludar&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, está corriendo alrededor mío&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, mueve la cola&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, me persigue&quot;</span><span class="s2">,</span>
+        <span class="s3">&quot;La mascota </span><span class="s0">$</span><span class="s1">name</span><span class="s3">, está oliendo el piso&quot;</span>
+    <span class="s2">)</span>
+    <span class="s1">println</span><span class="s2">(</span><span class="s1">phrases</span><span class="s2">.</span><span class="s1">random</span><span class="s2">())</span>
+    <span class="s0">val </span><span class="s1">wastedEnergy </span><span class="s2">= (</span><span class="s5">1</span><span class="s2">..</span><span class="s5">80</span><span class="s2">).</span><span class="s1">random</span><span class="s2">()</span>
+    <span class="s0">if </span><span class="s2">(</span><span class="s1">energy </span><span class="s2">- </span><span class="s1">wastedEnergy </span><span class="s2">&gt; </span><span class="s5">0</span><span class="s2">) {</span>
+        <span class="s1">energy </span><span class="s2">-= </span><span class="s1">wastedEnergy</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;La mascota de tipo: </span><span class="s0">${</span><span class="s1">type</span><span class="s2">.</span><span class="s1">name</span><span class="s0">}</span><span class="s3">, gastó </span><span class="s0">$</span><span class="s1">wastedEnergy</span><span class="s3">% de energia, su energía actualmente es: </span><span class="s0">$</span><span class="s1">energy</span><span class="s3">&quot;</span><span class="s2">)</span>
+
+    <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;El necesita descanso&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">fun </span><span class="s1">sound</span><span class="s2">() {</span>
+    <span class="s1">type</span><span class="s2">.</span><span class="s1">sound</span><span class="s2">()</span>
+<span class="s2">}</span>
+
+<span class="s0">fun </span><span class="s1">eat</span><span class="s2">() {</span>
+    <span class="s0">val </span><span class="s1">hambreAumentada </span><span class="s2">= (</span><span class="s5">1</span><span class="s2">..</span><span class="s5">80</span><span class="s2">).</span><span class="s1">random</span><span class="s2">()</span>
+    <span class="s0">if </span><span class="s2">(</span><span class="s1">energy </span><span class="s2">&lt;= </span><span class="s5">70</span><span class="s2">) {</span>
+        <span class="s1">hungry </span><span class="s2">= </span><span class="s1">hungry </span><span class="s2">+ </span><span class="s1">hambreAumentada</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;El porcentaje de hambre de tu </span><span class="s0">${</span><span class="s1">type</span><span class="s2">.</span><span class="s1">name</span><span class="s0">} </span><span class="s3">es: </span><span class="s0">$</span><span class="s1">hungry</span><span class="s3">%&quot;</span><span class="s2">)</span>
+    <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;aun no tiene hambre&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+    <span class="s0">if </span><span class="s2">(</span><span class="s1">hungry </span><span class="s2">&gt;= </span><span class="s5">10</span><span class="s2">) {</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Dale algo de comer a tu mascota </span><span class="s0">${</span><span class="s1">type</span><span class="s2">.</span><span class="s1">name</span><span class="s0">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Indica el valor de comida que deseas darle&quot;</span><span class="s2">)</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;EL valor de comida no puede ser mayor a </span><span class="s0">$</span><span class="s1">hungry</span><span class="s3">&quot;</span><span class="s2">)</span>
+        <span class="s0">val </span><span class="s1">comida </span><span class="s2">= </span><span class="s1">readln</span><span class="s2">().</span><span class="s1">toIntOrNull</span><span class="s2">()</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">comida </span><span class="s2">== </span><span class="s0">null</span><span class="s2">) {</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No puedes darle ese valor de comida!&quot;</span><span class="s2">)</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">comida </span><span class="s2">&gt; </span><span class="s1">hungry</span><span class="s2">) {</span>
+                <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No puedes darle tanta comida&quot;</span><span class="s2">)</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s0">val </span><span class="s1">porcentajeHambre </span><span class="s2">= </span><span class="s1">hungry </span><span class="s2">- </span><span class="s1">comida</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">porcentajeHambre </span><span class="s2">&lt;= </span><span class="s5">0</span><span class="s2">) {</span>
+                    <span class="s0">val </span><span class="s1">energiaRecuperada </span><span class="s2">= (</span><span class="s5">1</span><span class="s2">..</span><span class="s5">15</span><span class="s2">).</span><span class="s1">random</span><span class="s2">()</span>
+                    <span class="s1">energy </span><span class="s2">= </span><span class="s1">energy </span><span class="s2">+ </span><span class="s1">energiaRecuperada</span>
+                    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Tu mascota tiene </span><span class="s0">$</span><span class="s1">energy</span><span class="s3">% de energia&quot;</span><span class="s2">)</span>
+                    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No necesita mas comida&quot;</span><span class="s2">)</span>
+                <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Puedes darle mas comida si quieres.&quot;</span><span class="s2">)</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+    <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Tu mascota aun no tiene hambre&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">fun </span><span class="s1">reset</span><span class="s2">() {</span>
+        <span class="s0">val </span><span class="s1">suenoAumentada </span><span class="s2">= (</span><span class="s5">1</span><span class="s2">..</span><span class="s5">20</span><span class="s2">).</span><span class="s1">random</span><span class="s2">()</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">energy </span><span class="s2">&lt;= </span><span class="s5">70</span><span class="s2">) {</span>
+            <span class="s1">sleep </span><span class="s2">= </span><span class="s1">sleep </span><span class="s2">+ </span><span class="s1">suenoAumentada</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;El porcentaje de sueno de tu </span><span class="s0">${</span><span class="s1">type</span><span class="s2">.</span><span class="s1">name</span><span class="s0">} </span><span class="s3">es: </span><span class="s0">$</span><span class="s1">sleep</span><span class="s3">%&quot;</span><span class="s2">)</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;aun no tiene sueño&quot;</span><span class="s2">)</span>
+        <span class="s2">}</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">sleep </span><span class="s2">&gt;= </span><span class="s5">10</span><span class="s2">) {</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;tu mascota necesita dormir unas horas </span><span class="s0">${</span><span class="s1">type</span><span class="s2">.</span><span class="s1">name</span><span class="s0">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Indica el valor de horas de sueño que le vas a dar&quot;</span><span class="s2">)</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;EL valor de horas no puede ser mayor a </span><span class="s0">$</span><span class="s1">sleep</span><span class="s3">&quot;</span><span class="s2">)</span>
+            <span class="s0">val </span><span class="s1">sueno </span><span class="s2">= </span><span class="s1">readln</span><span class="s2">().</span><span class="s1">toIntOrNull</span><span class="s2">()</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">sueno </span><span class="s2">== </span><span class="s0">null</span><span class="s2">) {</span>
+                <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No puedes darle ese valor de horas!&quot;</span><span class="s2">)</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">sueno </span><span class="s2">&gt; </span><span class="s1">sleep</span><span class="s2">) {</span>
+                    <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No puedes darle tantas horas de sueño&quot;</span><span class="s2">)</span>
+                <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                    <span class="s0">val </span><span class="s1">porcentajeSueno </span><span class="s2">= </span><span class="s1">sleep </span><span class="s2">- </span><span class="s1">sueno</span>
+                    <span class="s0">if </span><span class="s2">(</span><span class="s1">porcentajeSueno </span><span class="s2">&lt;= </span><span class="s5">0</span><span class="s2">) {</span>
+                        <span class="s0">val </span><span class="s1">energiaRecuperada </span><span class="s2">= (</span><span class="s5">1</span><span class="s2">..</span><span class="s5">15</span><span class="s2">).</span><span class="s1">random</span><span class="s2">()</span>
+                        <span class="s1">energy </span><span class="s2">= </span><span class="s1">energy </span><span class="s2">+ </span><span class="s1">energiaRecuperada</span>
+                        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Tu mascota tiene </span><span class="s0">$</span><span class="s1">energy</span><span class="s3">% de energia&quot;</span><span class="s2">)</span>
+                        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No necesita mas horas de sueño&quot;</span><span class="s2">)</span>
+                    <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Puedes darle mas horas de sueño si quieres.&quot;</span><span class="s2">)</span>
+                    <span class="s2">}</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Tu mascota aun no tiene sueño&quot;</span><span class="s2">)</span>
+        <span class="s2">}</span>
+
+<span class="s2">}</span>
+
+    <span class="s0">class </span><span class="s1">PetType</span><span class="s2">(</span>
+    <span class="s0">val </span><span class="s1">name: String</span><span class="s2">,</span>
+    <span class="s0">val </span><span class="s1">washingInstructions: String</span><span class="s2">,</span>
+    <span class="s0">val </span><span class="s1">food: String</span><span class="s2">,</span>
+    <span class="s0">val </span><span class="s1">sound: String</span>
+<span class="s2">) {</span>
+
+    <span class="s0">fun </span><span class="s1">sound</span><span class="s2">() {</span>
+        <span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">$</span><span class="s1">name </span><span class="s3">está haciendo un sonido de: </span><span class="s0">$</span><span class="s1">sound</span><span class="s3">&quot;</span><span class="s2">)</span>
+    <span class="s2">}</span>
+
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">toString</span><span class="s2">()</span><span class="s1">: String </span><span class="s2">{</span>
+        <span class="s0">return </span><span class="s3">&quot;</span><span class="s0">$</span><span class="s1">name</span><span class="s3">, </span><span class="s0">$</span><span class="s1">washingInstructions</span><span class="s3">, </span><span class="s0">$</span><span class="s1">food </span><span class="s3">&quot;</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
